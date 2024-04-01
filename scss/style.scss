@@ -1,0 +1,83 @@
+@import 'fonts';
+@import 'reset';
+
+body {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Oxygen';
+  letter-spacing: 1px;
+}
+
+a {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+  color: #ff0000;
+}
+
+//?============================================================
+
+  .slider__BG {
+    height: 100vh;
+    background-image: url('../images/hw92.jpg');
+    display: flex;
+    justify-content: center;
+  }
+
+.slider__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+#sliderImg {
+  border-radius: 50%;
+  border: 5px solid rgb(255, 255, 255);
+  width: 300px;
+  height: 300px;
+  transition: all .2s linear;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px white;
+  }
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#back {
+  transition: all .3s linear;
+  background: url('../images/prev.svg') center/cover;
+
+  &:hover {
+    box-shadow: 0 0 20px white;
+  }
+
+  &:active {
+  background: url('../images/prevColor.svg') center/cover;
+  }
+}
+
+#forw {
+  transition: all .3s linear;
+  background: url('../images/next.svg') center/cover;
+
+  &:hover {
+    box-shadow: 0 0 20px white;
+  }
+
+  &:active {
+    background: url('../images/nextColor.svg') center/cover;
+  }
+}
+
+
